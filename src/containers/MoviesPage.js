@@ -5,6 +5,7 @@ import MoviesList from '../components/MoviesList';
 
 const MoviesPage = ({ match, movies }) => (
   <div>
+    <div></div>
     <MoviesList movies={movies} />
   </div>
 )
