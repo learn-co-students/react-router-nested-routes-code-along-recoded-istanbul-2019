@@ -1,12 +1,11 @@
-// .src/containers/MoviesPage.js
 import React from 'react';
-import { Route } from 'react-router-dom';
-import MoviesList from '../components/MoviesList';
 
-const MoviesPage = ({ match, movies }) => (
-  <div>
-    <MoviesList movies={movies} />
-  </div>
-)
+const MovieShow = ({ match, movies }) => {
+    return (
+        <div>
+            <h3>{movies[match.params.movieId].title}</h3>
+        </div>
+    );
+}
 
-export default MoviesPage
+export default MovieShow;
